@@ -4,15 +4,21 @@
   box-sizing: border-box;
 }
 
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 body {
   margin: 0 auto;
   font-family: sans-serif;
 }
 
 
-.pages {
+/*.pages {
   height: 100vh;
-}
+}*/
 
 
 /********Home Page Header******/
@@ -32,7 +38,7 @@ body {
 
 #front-page img {
   width: 400px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 #main-nav a {
@@ -55,6 +61,11 @@ body {
 }
 
 /******Create your own bowl - STEPS******/
+#bowl-creation {
+  position: relative;
+  padding-bottom: 50px;
+}
+
 #bowl-creation h2 {
   margin-top: 0;
   text-align: center; 
@@ -69,7 +80,7 @@ body {
 
 .steps {
   width: 750px;
-  margin: 50px auto;
+  margin: 30px auto;
 }
 
 .steps h4,
@@ -113,12 +124,23 @@ body {
   margin: 20px 0;
 }
 
-
+#bowl-creation i {
+  color: #000; 
+  position: absolute;
+  bottom: 20px;
+  margin-right: -16px;
+  right: 50%;
+}
 
 
 /****** EVENTS ***********/
 #events {
-  background-color: red;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+  line-height: 30px;
+  height: 500px;
 }
 
 
@@ -128,9 +150,9 @@ body {
   float: left;
   background-color: #06222E;
   color: #B1B0B8;
-  width: 40%;
-  padding: 60px 75px;
-  height: 380px;
+  width: 50%;
+  padding: 60px 125px;
+  height: 500px;
 }
 
 #location-info h4 {
@@ -149,7 +171,7 @@ body {
 
 #location-map {
   float: right;
-  width: 52.1%;
+  width: 50%;
   margin-right: 
 }
 
@@ -158,7 +180,7 @@ body {
 
 #social {
   clear: both;
-  background-color: #313036;
+  background-color: #1B1B1B;
   padding-bottom: 100px;
 }
 
@@ -182,6 +204,11 @@ body {
   border-radius: 25%;
 }
 
+#social i:hover {
+  background-color: gray;
+  color: white;
+}
+
 #facebook i {
   padding: 20px 35px;
 }
@@ -202,4 +229,16 @@ body {
 /*********** FOOTER *************/
 footer {
   text-align: center;
+  background-color: #141414;
+  color: #eee;
+  padding: 50px 0;
+}
+
+footer a {
+  color: #eee;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: gray;
 }
